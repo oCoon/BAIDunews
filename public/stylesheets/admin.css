@@ -1,0 +1,78 @@
+.col-md-12 h1{
+    height: 50px;
+    line-height: 50px;
+    background: -webkit-linear-gradient(top,#ccc,#fff);
+    text-align: center;
+    margin-top: 0;
+}
+.box{
+    border: 1px solid #ccc;
+    padding:15px 15px;
+    height: 580px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.tuijian{
+    position:relative;
+    margin-bottom: 30px;
+}
+.mybtn{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+.mymenu2{
+    height:100px;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+}
+.mymenu1{
+    height:60px;
+    /* overflow: auto; */
+    position: absolute;
+    right: 0;
+}
+body{
+    padding-bottom:100px;
+}
+#mypanel{
+    padding-top: 0px;
+    background: #fff;
+}
+
+.mytbody{
+    overflow: auto;
+    width: 100%;
+    height: 428px;
+    display: block;
+}
+ tr{
+    width: 718px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.mytbody  td{
+    width: 12%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.mytbody  td span{
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    background:-webkit-linear-gradient(top,#f00,orangered);
+    border: 1px solid blue;
+    color: white;
+    cursor: pointer;
+}
+thead th{
+    width: 14%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}

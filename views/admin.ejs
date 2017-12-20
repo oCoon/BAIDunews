@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/admin.css' />
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" >
+               <h1>后台编辑器</h1> 
+            </div>
+        </div>
+            <div class="row">
+                    <div class="col-md-4" >
+                        <div class="box">
+                            <h2>新闻发布器</h2>
+                            <div class="form-group title">
+                                <label for="exampleInputEmail1">新闻标题</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                            <div class="form-group  imgurl">
+                                <label for="exampleInputEmail1">新闻图片地址</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                            <div class="form-group  source">
+                                <label for="exampleInputEmail1">新闻来源</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                            <div class="form-group  date">
+                                <label for="exampleInputEmail1">新闻日期</label>
+                                <input type="date" class="form-control" id="exampleInputEmail1" placeholder="">
+                            </div>
+                            <div class="dropdown  swp">
+                                    <label for="exampleInputEmail1">是否轮播</label>      
+                                    <input type="text" class="form-control myswp" id="exampleInputEmail1" placeholder="">
+                                    <button class="btn btn-default dropdown-toggle mybtn" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu mymenu1" aria-labelledby="dropdownMenu1">
+                                        <li><a href="javascript:;">0</a></li>
+                                        <li><a href="javascript:;">1</a></li>
+                                    </ul>
+                                </div>
+
+                            <div class="dropdown tuijian">
+                                    <label for="dropdownMenu1">推荐</label>
+                                    <input type="text" class="form-control mytuijian" id="dropdownMenu1" placeholder="">
+                                    <button class="btn btn-default dropdown-toggle mybtn" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                      <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu mymenu2" aria-labelledby="dropdownMenu1">
+                                      <li><a href="javascript:;">推荐</a></li>
+                                      <li><a href="javascript:;">百家</a></li>
+                                      <li><a href="javascript:;">本地</a></li>
+                                      <li><a href="javascript:;">图片</a></li>
+                                      <li><a href="javascript:;">娱乐</a></li>
+                                      <li><a href="javascript:;">社会</a></li>
+                                      <li><a href="javascript:;">军事</a></li>
+                                      <li><a href="javascript:;">互联网</a></li>
+                                      <li><a href="javascript:;">科技</a></li>
+                                      <li><a href="javascript:;">女人</a></li>
+                                      <li><a href="javascript:;">搞笑</a></li>
+                                      <li><a href="javascript:;">生活</a></li>
+                                      <li><a href="javascript:;">国际</a></li>
+                                      <li><a href="javascript:;">国内</a></li>
+                                      <li><a href="javascript:;">体育</a></li>
+                                      <li><a href="javascript:;">汽车</a></li>
+                                      <li><a href="javascript:;">财经</a></li>
+                                      <li><a href="javascript:;">房产</a></li>
+                                      <li><a href="javascript:;">时尚</a></li>
+                                      <li><a href="javascript:;">教育</a></li>
+                                      <li><a href="javascript:;">游戏</a></li>
+                                      <li><a href="javascript:;">旅游</a></li>
+                                      <li><a href="javascript:;">人文</a></li>
+                                      <li><a href="javascript:;">创意</a></li>
+                                      <li><a href="javascript:;">互联网+</a></li>
+                                      <li><a href="javascript:;">时尚网</a></li>
+                                      <li><a href="javascript:;">观察网</a></li>
+                                      <li><a href="javascript:;">NBA</a></li>
+                                      <li><a href="javascript:;">苹果公司</a></li>
+                                
+                                    </ul>
+                            </div>
+                            <button type="button" class="btn btn-primary tijiao">提交</button>
+                            <button type="button" class="btn btn-success gengxin">更新<span class="span1"></span></button>
+                                
+                        </div>
+                    </div>
+                    <div class="col-md-8 ">
+                        <div class="box">
+                            <div class="panel panel-default " >
+                                <!-- Default panel contents -->
+                                <div class="panel-heading" id="mypanel"><h2>新闻详情</h2></div>
+                              
+                                <!-- Table -->
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>id</th>
+                                            <th>类别</th>
+                                            <th>日期</th>
+                                            <th>标题</th>
+                                            <th>图片</th>
+                                            <th>来源</th>
+                                            <th>轮播</th>
+                                            <th>删除</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="mytbody">                                   
+                                    </tbody>
+                                </table>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+    </div>
+    
+  </body>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/javascripts/admin.js"></script>
+  
+</html>
